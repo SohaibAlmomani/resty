@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# resty
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LAB - Component Based UI
 
-## Available Scripts
+**RESTy Phase 1:** Begin work on the RESTy API testing application
 
-In the project directory, you can run:
+## Before you begin
 
-### `npm start`
+Refer to _Getting Started_ in the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for complete setup, configuration, deployment, and submission instructions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create a UML diagram of the **RESTy** system on a whiteboard before you start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Create a new repository for this project, called 'resty' and work in a branch called 'base'
 
-### `npm test`
+## Business Requirements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Refer to the [RESTy System Overview](../../apps-and-libraries/resty/README.md) for a complete review of the application, including Business and Technical requirements along with the development roadmap.
 
-### `npm run build`
+## Phase 1 Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Today, we begin the first of a 4-Phase build of the RESTy application, written in React. In this first phase, our goal is to setup the basic scaffolding of the application, with intent being to add more functionality to the system as we go. This initial build sets up the file structure so that we can progressively build this application in a scalable manner
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Preview](preview.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technical Requirements / Notes
 
-### `npm run eject`
+> The application, as written by our development team was done using class components as a proof of concept. In order to go to production, we're going to have to convert this to an application written using React function components so that our foundation is both stable and high performing.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Refactor the RESTy application as follows:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Convert all child components of `App.js` from classes to functions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - The `App` component serves as the container for all sub-components of this application.
+   - Leave this component as a Class.
+   - Make sure all base styles for `App` are included in a `.scss` imported within `App.js`.
+   - Ensure that the `Header`, `Footer`, `Results` and `Form` components are imported using ES6 `import` syntax.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Use `.scss` files to style each component
 
-## Learn More
+   - Each of the components use their own `.scss` file for styling.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Core application functionality should remain unchanged:
+   - The `<Form>` component should:
+     - Call a function on submit that updates the `<App/>` component via a function sent down as a prop so that the app can process the form values.
+   - The `<Results/>` component should show mock API results.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Assignment Submission Instructions
 
-### Code Splitting
+Refer to the the [Submitting React Apps Lab Submission Instructions](../../../reference/submission-instructions/labs/react-apps.md) for the complete lab submission process and expectations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> NOTE: For this assignment, **testing is not required**
