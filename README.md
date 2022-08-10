@@ -6,7 +6,7 @@
 
 ## Before you begin
 
-Refer to _Getting Started_ in the [lab submission instructions](../../../reference/submission-instructions/labs/README.md) for complete setup, configuration, deployment, and submission instructions.
+Refer to _Getting Started_ in the [lab submission instructions](https://codefellows.github.io/code-401-javascript-guide/reference/submission-instructions/labs/) for complete setup, configuration, deployment, and submission instructions.
 
 Create a UML diagram of the **RESTy** system on a whiteboard before you start
 
@@ -14,7 +14,7 @@ Create a UML diagram of the **RESTy** system on a whiteboard before you start
 
 ## Business Requirements
 
-Refer to the [RESTy System Overview](../../apps-and-libraries/resty/README.md) for a complete review of the application, including Business and Technical requirements along with the development roadmap.
+Refer to the [RESTy System Overview](https://codefellows.github.io/code-401-javascript-guide/curriculum/apps-and-libraries/resty/) for a complete review of the application, including Business and Technical requirements along with the development roadmap.
 
 ## Phase 1 Requirements
 
@@ -46,6 +46,8 @@ Refactor the RESTy application as follows:
 
 ### Assignment Submission Instructions
 
-Refer to the the [Submitting React Apps Lab Submission Instructions](../../../reference/submission-instructions/labs/react-apps.md) for the complete lab submission process and expectations
+Refer to the the [Submitting React Apps Lab Submission Instructions](https://codefellows.github.io/code-401-javascript-guide/reference/submission-instructions/labs/react-apps.html) for the complete lab submission process and expectations
 
 > NOTE: For this assignment, **testing is not required**
+
+# [Sandbox Link](https://codesandbox.io/s/purple-monad-jdnzu4)
