@@ -13,7 +13,6 @@ function Form (props) {
     props.handleApiCall(formData);
   }
 
-
     return (
       <>
         <form onSubmit={handleSubmit}>
